@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackerthon website | home page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION MENUS -->
+    <div class="header">
+        <span class="name">Hacker<span>Thon</span></span>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a role="button" onclick="open_sign_popup()">Sign In</a></li>
+        </ul>
+        <div class="bagger" role="button" onclick="open_menu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div id="side-menu" class="side_menu">
+        <span class="btn_close" role="button" onclick="close_menu()">&times;</span>
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">About</a>
+        <a role="button" onclick="open_sign_popup()">Sign in</a>
+    </div>
+    
+    
+    <!-- SIGN IN POP UP -->
+    <form id="sign-popup" class="sign_popup" method="POST">
+        <div>
+            <div class="logo_name">
+                <div>
+                    <p>Hacker<span>Thon</span></p>
+                </div>
+                <span class="btn_close" onclick="close_sign_popup()" role="button">&times;</span>
+            </div>
+            <h2>Sign In</h2>
+            <p><input type="name" name="username" placeholder="Enter Username..." /></p>
+            <p><input type="name" name="email" placeholder="Enter Email..." /></p>
+            <p><input type="password" name="password" placeholder="Enter Password..." /></p>
+            <p><input type="submit" class="btn_submit" value="Sign in" /></p>
+        </div>
+    </form>
+    
+    
+    <!-- INTRODUCTION -->
+    <h1>Welcome to Hackerthon.</h1>
+    
+    
+    <!-- ABOUT SECTION -->
+    <div class="about_page">
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
