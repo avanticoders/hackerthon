@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* GLOBAL CLASSES */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    height: 70px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.header .name {
+    color: red;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header .name span {
+    color: dodgerblue;
+}
+
+.header .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .menu a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: 600ms ease-in;
+}
+
+.header .menu a:hover {
+    color: dodgerblue;
+}
+
+.header .bagger {
+    width: 30px;
+    height: 30px;
+    display: none;
+    align-self: center;
+}
+
+.header .bagger .line {
+    width: 30px;
+    height: 3.5px;
+    background-color: #fff;
+    margin: 5px 0px;
+}
+
+@media(max-width: 568px) {
+    .header {
+        padding: 0px 20px;
+    }
+    .header .name {
+        font-size: 30px;
+    }
+    .header .menu a {
+        display: none;
+    }
+    .header .bagger {
+        display: block;
+    }
+}
+
+/* SIDEMENU */
+.side_menu {
+    width: 0;
+    height: 100%;
+    text-align: center;
+    background-color: #222;
+    right: 0;
+    top: 0;
+    transition: 1s ease-in-out;
+    overflow-x: hidden;
+    position: fixed;
+    padding-top: 40%;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.side_menu a {
+    text-decoration: none;
+    background-color: dodgerblue;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 70%;
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    padding: 10px 10px 10px 20px;
+    transition: 0.5s;
+}
+
+.side_menu .btn_close {
+    right: 20px;
+    top: 10px;
+    background: none;
+    position: absolute;
+    font-size: 34px;
+}
+
+/* SIGN IN POP UP */
+.sign_popup {
+    width: 400px;
+    height: 320px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    box-sizing: border-box;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 400ms ease-in-out;
+}
+
+.logo_name {
+    width: 100%;
+    height: 40px;
+    background: #111;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo_name div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.logo_name div p span {
+    color: dodgerblue;
+}
+
+.sign_popup .btn_close {
+    right: 20px;
+    top: 0;
+    background: none;
+    position: absolute;
+    font-size: 34px;
+}
+
+.sign_popup .btn_submit {
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: red;
+    color: whitesmoke;
+    outline: none;
+    margin: 10px;
+}
+
+.sign_popup h2 {
+    text-transform: uppercase;
+}
+
+.sign_popup input {
+    background: none;
+    outline: none;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 5px 5px;
+    width: 250px;
+}
+
+@media(max-width: 568px) {
+    .sign_popup {
+        width: 100vw;
+    }
+}
