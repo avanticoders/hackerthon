@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hackerthon website | home page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
     <div class="about_page">
         
     </div>
-    <script src="main.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>

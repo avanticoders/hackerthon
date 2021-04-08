@@ -91,7 +91,6 @@ body {
     overflow-x: hidden;
     position: fixed;
     padding-top: 40%;
-    opacity: 0.9;
     z-index: 1;
 }
 
