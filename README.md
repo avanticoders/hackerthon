@@ -1,4 +1,7 @@
 # Hackerthon app
 
-# Sean Deluxe
-A simple website nothing fansy.
+# Programmer
+    > Sean Deluxe
+
+# Details
+    > A simple website nothing fansy.
